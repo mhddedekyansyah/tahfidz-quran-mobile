@@ -61,6 +61,7 @@ class _AboutState extends State<About> {
                     ),
                     Expanded(
                       child: Container(
+                        width: width,
                         padding: EdgeInsets.all(defaultPadding),
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(defaultRadius),
