@@ -1,7 +1,6 @@
 import 'dart:convert';
 
 import 'package:dio/dio.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:tahfidz_quran/api/api_constant.dart';
 import 'package:tahfidz_quran/models/info_model.dart';
 
@@ -12,7 +11,7 @@ class InfoRepository {
       if (response.statusCode != 200) {
         throw jsonDecode(response.data['message']);
       }
-      print(response.data['data']);
+      print('data info => ${response.data['data']}');
 
       return InfoModel.fromJson(response.data['data']);
     } catch (e) {

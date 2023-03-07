@@ -4,7 +4,7 @@ class DistributionModel extends Equatable {
   final num id;
   final BatchModel batch;
   final TahfidzHouseModel tahfidzHouse;
-  final String totalRice;
+  final dynamic totalRice;
   final String imageUrl;
 
   const DistributionModel({

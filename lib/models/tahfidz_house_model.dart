@@ -6,9 +6,9 @@ class TahfidzHouseModel extends Equatable {
   final String name;
   final String address;
   final String contact;
-  final String totalSantri;
-  final String totalSantriYatim;
-  final String totalSantriDhuafa;
+  final dynamic totalSantri;
+  final dynamic totalSantriYatim;
+  final dynamic totalSantriDhuafa;
 
   const TahfidzHouseModel({
     required this.id,

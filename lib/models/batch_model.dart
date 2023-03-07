@@ -3,7 +3,7 @@ part of 'models.dart';
 
 class BatchModel extends Equatable {
   final num id;
-  final String batch;
+  final dynamic batch;
 
   const BatchModel({
     required this.id,

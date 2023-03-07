@@ -126,7 +126,7 @@ class DetailDistribution extends StatelessWidget {
                                     secondaryStyle.copyWith(fontWeight: bold),
                               ),
                               Text(
-                                distribution.totalRice,
+                                '${distribution.totalRice}.kg',
                                 style: secondaryStyle.copyWith(
                                   fontWeight: regular,
                                   fontSize: 12,

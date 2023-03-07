@@ -69,11 +69,17 @@ class _AboutState extends State<About> {
                         child: BlocBuilder<InfoBloc, InfoState>(
                             builder: (context, state) {
                           if (state is InfoLoaded) {
-                            return Text(
-                              state.info.info,
-                              textAlign: TextAlign.center,
-                              style: secondaryStyle,
-                            );
+                            return state.info != null
+                                ? Text(
+                                    state.info.info,
+                                    textAlign: TextAlign.center,
+                                    style: secondaryStyle,
+                                  )
+                                : Text(
+                                    'Info Aplikasi',
+                                    textAlign: TextAlign.center,
+                                    style: secondaryStyle,
+                                  );
                           }
 
                           if (state is InfoLoading) {
